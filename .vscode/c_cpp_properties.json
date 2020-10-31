@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Source\\Templates",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Source",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device\\ST",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Include",
+                "${workspaceFolder}\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
+                "${workspaceFolder}\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
+                "${workspaceFolder}\\Drivers\\STM32F4xx_HAL_Driver\\Src",
+                "${workspaceFolder}\\Drivers\\CMSIS",
+                "${workspaceFolder}\\Drivers\\STM32F4xx_HAL_Driver",
+                "${workspaceFolder}\\MDK-ARM\\RTE\\_ADS1292R",
+                "${workspaceFolder}\\MDK-ARM\\ADS1292R",
+                "${workspaceFolder}\\MDK-ARM\\DebugConfig",
+                "${workspaceFolder}\\MDK-ARM\\RTE",
+                "${workspaceFolder}\\.vscode",
+                "${workspaceFolder}\\ads1292r",
+                "${workspaceFolder}\\Drivers",
+                "${workspaceFolder}\\Inc",
+                "${workspaceFolder}\\MDK-ARM",
+                "${workspaceFolder}\\Src"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "F:\\mingw64\\bin\\g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

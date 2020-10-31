@@ -1,0 +1,178 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.0.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Zhu Shijian, Xidian University, LIC=GMZLQ-NJX1L-Y8JFK-Z6YR7-R87HX-ILFU4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.0.0
+Toolchain Path:  F:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.11
+Assembler:       Armasm.exe V6.11
+Linker/Locator:  ArmLink.exe V6.11
+Library Manager: ArmAr.exe V6.11
+Hex Converter:   FromElf.exe V6.11
+CPU DLL:         SARMCM3.DLL V5.27.0.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\ADS1292R\MDK-ARM\ADS1292R.uvprojx
+Project File Date:  10/30/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.11', folder: 'F:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'ADS1292R'
+assembling startup_stm32f407xx.s...
+compiling spi.c...
+compiling stm32f4xx_it.c...
+compiling main.c...
+compiling gpio.c...
+compiling usart.c...
+../Src/hmi_uart.c(30): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(30): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(36): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(36): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(44): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(44): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(69): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(69): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(85): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(85): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(91): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(91): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(97): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(97): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(103): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(103): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+../Src/hmi_uart.c(109): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    printf(endchar);
+           ^~~~~~~
+../Src/hmi_uart.c(109): note: treat the string as an argument to avoid this
+    printf(endchar);
+           ^
+           "%s", 
+9 warnings generated.
+compiling hmi_uart.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling system_stm32f4xx.c...
+../ads1292r/ads1292r.c(266): warning: incompatible integer to pointer conversion assigning to 'uint8_t *' (aka 'unsigned char *') from 'uint8_t' (aka 'unsigned char') [-Wint-conversion]
+        data = ADS1292R_SPI_TransmitReceive(0X00);
+             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../ads1292r/ads1292r.c(288): warning: passing 'volatile uint8_t [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    HAL_SPI_TransmitReceive(&hspi1, ADS1292R_tmp, ADS1292R_data_buf, 9, 0xff);
+                                    ^~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_spi.h(668): note: passing argument to parameter 'pTxData' here
+HAL_StatusTypeDef HAL_SPI_TransmitReceive(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size,
+                                                                            ^
+../ads1292r/ads1292r.c(338): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    ADS1292R_WriteMultiRegs(ADS1292R_CONFIG1, ADS1292R_reg + 1, 11);
+                                              ^~~~~~~~~~~~~~~~
+../ads1292r/ads1292r.c(217): note: passing argument to parameter 'data' here
+void ADS1292R_WriteMultiRegs(uint8_t reg, uint8_t *data, uint8_t len)
+                                                   ^
+../ads1292r/ads1292r.c(360): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    ADS1292R_WriteMultiRegs(ADS1292R_CONFIG1, ADS1292R_reg + 1, 11);
+                                              ^~~~~~~~~~~~~~~~
+../ads1292r/ads1292r.c(217): note: passing argument to parameter 'data' here
+void ADS1292R_WriteMultiRegs(uint8_t reg, uint8_t *data, uint8_t len)
+                                                   ^
+../ads1292r/ads1292r.c(400): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    ADS1292R_WriteMultiRegs(ADS1292R_WREG | ADS1292R_CONFIG1, ADS1292R_reg + 1, 11);
+                                                              ^~~~~~~~~~~~~~~~
+../ads1292r/ads1292r.c(217): note: passing argument to parameter 'data' here
+void ADS1292R_WriteMultiRegs(uint8_t reg, uint8_t *data, uint8_t len)
+                                                   ^
+5 warnings generated.
+compiling ads1292r.c...
+compiling stm32f4xx_hal_uart.c...
+linking...
+Program Size: Code=6260 RO-data=448 RW-data=52 ZI-data=1228  
+FromELF: creating hex file...
+"ADS1292R\ADS1292R.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ADS1292R
+  F:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  F:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+    // 有关 tasks.json 格式的文档，请参见
+    // https://go.microsoft.com/fwlink/?LinkId=733558
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "gcc.exe build active file",
+            "command": "F:\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\ads1292r\\ads1292r.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_cortex.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_dma.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_dma_ex.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_exti.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_flash.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_flash_ex.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_flash_ramfunc.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_gpio.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_pwr.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_pwr_ex.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_rcc.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_rcc_ex.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_spi.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_tim.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_tim_ex.c",
+                "${fileDirname}\\Drivers\\STM32F4xx_HAL_Driver\\Src\\stm32f4xx_hal_uart.c",
+                "${fileDirname}\\Src\\gpio.c",
+                "${fileDirname}\\Src\\hmi_uart.c",
+                "${fileDirname}\\Src\\main.c",
+                "${fileDirname}\\Src\\spi.c",
+                "${fileDirname}\\Src\\stm32f4xx_hal_msp.c",
+                "${fileDirname}\\Src\\stm32f4xx_it.c",
+                "${fileDirname}\\Src\\system_stm32f4xx.c",
+                "${fileDirname}\\Src\\usart.c"
+            ],
+            "options": {
+                "cwd": "F:\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "clang.exe build active file",
+            "command": "F:\\LLVM\\bin\\clang.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "F:\\LLVM\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "g++.exe build active file",
+            "command": "F:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "F:\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}

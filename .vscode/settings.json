@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "*.m": "matlab",
+        "iostream": "cpp",
+        "ADS1292.C": "cpp"
+    }
+}
